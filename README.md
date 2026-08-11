@@ -63,7 +63,15 @@ Annotation（type: text | image，content: JSON）
 
 ## 本地开发
 
-### 后端
+### 一键启动（推荐）
+
+双击 `scripts\start.bat`（或在 PowerShell 执行 `scripts\start.ps1`）。
+自动完成：创建后端虚拟环境 → 安装依赖 → 生成 .env → 安装前端依赖 → 同时启动前后端。
+首次运行稍慢，之后启动只需几秒。
+
+### 手动启动
+
+后端：
 
 ```bash
 cd backend
@@ -74,7 +82,7 @@ uvicorn app.main:app --reload --port 8000
 
 API 文档：http://localhost:8000/docs
 
-### 前端
+前端：
 
 ```bash
 cd frontend
