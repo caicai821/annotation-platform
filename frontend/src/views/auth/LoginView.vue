@@ -45,6 +45,9 @@ async function onSubmit() {
           登录
         </el-button>
       </el-form>
+      <div class="footer">
+        没有账号？<router-link to="/register">去注册</router-link>
+      </div>
     </el-card>
   </div>
 </template>
@@ -71,5 +74,12 @@ async function onSubmit() {
 
 .submit {
   width: 100%;
+}
+
+.footer {
+  margin-top: 16px;
+  text-align: center;
+  color: #909399;
+  font-size: 13px;
 }
 </style>
